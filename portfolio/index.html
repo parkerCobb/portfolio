@@ -1,332 +1,522 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--Welcome to my portfolio! I hope you enjoy your time here. I coded most of this site myself, using webflow as a tool during set up. Now the site is hosted on Github, with some added florishes and optimizations. Shoot me a message if you found this. I'd love to know what drove you to check out the code.-->
+    <!--Welcome to my portfolio! I hope you enjoy your time here. I coded most of this site myself, using webflow as a tool during set up. Now the site is hosted on Github, with some added florishes and optimizations. Shoot me a message if you found this. I'd love to know what drove you to check out the code.-->
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Parker Cobb | Portfolio</title>
+        <meta name="description"
+            content="Parker Cobb is a digital product designer creating
+            inclusive, user-centered experiences that solve real problems and
+            drive meaningful impact.">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Parker Cobb | Portfolio</title>
-    <meta name="description" 
-        content="Parker Cobb is a digital product designer creating inclusive, user-centered experiences that solve real problems and drive meaningful impact."
-    >
+        <!--Social Media-->
+        <meta property="og:type" content="website" />
+        <!--CHECK THIS-->
+        <meta property="og:url" content="https://parkercobb.work">
+        <meta content="Parker Cobb | Portfolio" property="og:title">
+        <!--CHECK THIS-->
+        <meta property="og:image"
+            content="https://parkercobb.work/assets/metaStuff/SocialBanner.png">
+        <meta property="og:image:alt" content="Parker Cobb, Digital Product
+            Designer banner">
+        <meta property="og:site_name" content="parkercobb.work">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:description"
+            content="Parker is a digital product designer empowering users with
+            inclusive solutions that drive impactful experiences.">
 
-    <!--Social Media-->
-    <meta property="og:type" content="website" />
+        <!--Twitter Specific-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://parkercobb.work">
+        <meta name="twitter:title" content="Parker Cobb | Portfolio">
         <!--CHECK THIS-->
-    <meta property="og:url" content="https://parkercobb.work">
-    <meta content="Parker Cobb | Portfolio" property="og:title" >
-        <!--CHECK THIS-->
-    <meta property="og:image" content="https://parkercobb.work/assets/metaStuff/SocialBanner.png">
-    <meta property="og:image:alt" content="Parker Cobb, Digital Product Designer banner">
-    <meta property="og:site_name" content="parkercobb.work">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:description"
-        content="Parker is a digital product designer empowering users with inclusive solutions that drive impactful experiences."
-    >
-    
-    <!--Twitter Specific-->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://parkercobb.work">
-    <meta name="twitter:title" content="Parker Cobb | Portfolio">
-        <!--CHECK THIS-->
-    <meta property="twitter:image" content="https://parkercobb.work/assets/metaStuff/SocialBanner.png">
-    <meta property="twitter:image:alt" content="Parker Cobb, Digital Product Designer banner">
-    <meta name="twitter:description"
-        content="Parker is a digital product designer empowering users with inclusive solutions that drive impactful experiences."
-    >
-    <!--End of Social Tags-->
-    
-    <link rel="stylesheet" href="css\portfolio.css">
-    
-    <!--Hides Webflow elements that have not loaded yet.-->
-    <style>
+        <meta property="twitter:image"
+            content="https://parkercobb.work/assets/metaStuff/SocialBanner.png">
+        <meta property="twitter:image:alt" content="Parker Cobb, Digital Product
+            Designer banner">
+        <meta name="twitter:description"
+            content="Parker is a digital product designer empowering users with
+            inclusive solutions that drive impactful experiences.">
+        <!--End of Social Tags-->
+
+        <link rel="stylesheet" href="css\portfolio.css">
+
+        <!--Hides Webflow elements that have not loaded yet.-->
+        <style>
         html.w-mod-js:not(.w-mod-ix3) :is([data-wf-target*='["69979c9d1b5eea4abe6835ea","5b4e0559-037f-7a2c-b2c0-494f7495fddf"]'], .casestudycontainer, [data-wf-target*='["69979c9d1b5eea4abe6835ea","cc62cc37-31f0-eb5a-186a-133d1228a952"]']) {
             visibility: hidden !important;
         }
     </style>
+        <link rel="canonical" href="https://parkercobb.work">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="assets\metaStuff\favicon_32.png">
+        <link rel="apple-touch-icon" sizes="180x180"
+            href="assets\metaStuff\appleTouchIcon.png">
 
-    <link rel="canonical" href="https://parkercobb.work">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets\metaStuff\favicon_32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets\metaStuff\appleTouchIcon.png">
-    
-    <!--BootStrap related, sets classes with w-mod-->
-    <script
-        type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);
+        <!--BootStrap related, sets classes with w-mod-->
+        <script
+            type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);
     </script>
-</head>
+    </head>
 
-<body>
-    <div id="Nav" data-collapse="medium" role="banner" class="navbar-shadow-container w-nav">
+    <body>
+        <div id="Nav" data-collapse="medium" role="banner"
+            class="navbar-shadow-container w-nav">
             <div class="div-block-6">
-                <div class="navbar-wrapper"><a href="#" class="logowrapper w-inline-block">
+                <div class="navbar-wrapper"><a href="#" class="logowrapper
+                        w-inline-block">
                         <h1 class="plogoformat">P</h1>
                     </a>
                     <div class="menu-button-6 w-nav-button">
                         <div class="icon-4 w-icon-nav-menu"></div>
                     </div>
                 </div>
-                <nav role="navigation" class="nav-menu-wrapper-three-2 w-nav-menu">
+                <nav role="navigation" class="nav-menu-wrapper-three-2
+                    w-nav-menu">
                     <div class="nav-menu-three-4">
-                        <ul role="list" class="nav-menu-block-2 w-list-unstyled">
-                            <li class="mobile-margin-top-14"><a href="#CaseStudies" class="navbuttons w-button">Work</a>
+                        <ul role="list" class="nav-menu-block-2
+                            w-list-unstyled">
+                            <li class="mobile-margin-top-14"><a
+                                    href="#CaseStudies" class="navbuttons
+                                    w-button">Work</a>
                             </li>
-                            <li class="mobile-margin-top-14"><a href="#AboutSection"
+                            <li class="mobile-margin-top-14"><a
+                                    href="#AboutSection"
                                     class="navbuttons w-button">About</a></li>
-                            <li class="mobile-margin-top-14"><a href="#ContactSection"
+                            <li class="mobile-margin-top-14"><a
+                                    href="#ContactSection"
                                     class="navbuttons w-button">Contact</a></li>
                             <li class="mobile-margin-top-14"><a
                                     href="https://drive.google.com/file/d/1qxe_ECoNgT4HAYB6szKhQK093cnmN1DI/view?usp=sharing"
-                                    target="_blank" class="highlightednavbutton w-button">Resume</a></li>
+                                    target="_blank" class="highlightednavbutton
+                                    w-button">Resume</a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </div>
-    <section class="herosection">
-        <div class="hero-wrapper"><img
-                src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e96fe1f26530d81e7431c7_BackgroundRemoved.png"
-                loading="eager" width="Auto" height="Auto"
-                alt="A cutout headshot of a person with short brown hair, the person&#x27;s figure is surrounded in a white outline that contrasts the background."
-                id="HeroPhoto" class="heroimage" />
-            <div class="herotextcontainer">
-                <h1 class="heroheading">Hi, I&#x27;m Parker.</h1>
-                <h2 class="herosubhead">I’m a digital product designer empowering users with inclusive solutions that
-                    drive impactful experiences.</h2>
-                <div class="w-layout-blockcontainer tworightbuttoncontainer w-container"><a href="#ContactSection"
-                        class="button-secondary w-button">Let&#x27;s Connect</a><a href="#AboutSection"
-                        class="button-primary w-button">More About Me</a></div>
+        <section class="herosection">
+            <div class="hero-wrapper"><img
+                    src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e96fe1f26530d81e7431c7_BackgroundRemoved.png"
+                    loading="eager" width="Auto" height="Auto"
+                    alt="A cutout headshot of a person with short brown hair,
+                    the person&#x27;s figure is surrounded in a white outline
+                    that contrasts the background."
+                    id="HeroPhoto" class="heroimage" />
+                <div class="herotextcontainer">
+                    <h1 class="heroheading">Hi, I&#x27;m Parker.</h1>
+                    <h2 class="herosubhead">I’m a digital product designer
+                        empowering users with inclusive solutions that
+                        drive impactful experiences.</h2>
+                    <div class="w-layout-blockcontainer tworightbuttoncontainer
+                        w-container"><a href="#ContactSection"
+                            class="button-secondary w-button">Let&#x27;s Connect</a><a
+                            href="#AboutSection"
+                            class="button-primary w-button">More About Me</a></div>
+                </div>
             </div>
-        </div>
-    </section>
-    <div class="whitebackground">
-        <section id="CaseStudies" class="casestudies">
-            <h2 class="h2">Work I&#x27;m Proud Of:</h2><a href="work\educational-chatbot.html"
-                class="casestudycontainer w-inline-block">
-                <div class="w-layout-blockcontainer casestudyimage w-container"><img
-                        src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e97a490097743ed1e1e074_kidPlayingWithFroggy%20(1)%20(1)%20(1)%20(3).png"
-                        loading="lazy" width="Auto" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
-                        alt="Overhead view of a child and an adult sitting on a couch using a laptop, with a learning app on screen showing a counting activity with lily pads, and a teddy bear nearby."
-                        srcset="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e97a490097743ed1e1e074_kidPlayingWithFroggy%20(1)%20(1)%20(1)%20(3)-p-500.png 500w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e97a490097743ed1e1e074_kidPlayingWithFroggy%20(1)%20(1)%20(1)%20(3)-p-800.png 800w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e97a490097743ed1e1e074_kidPlayingWithFroggy%20(1)%20(1)%20(1)%20(3)-p-1080.png 1080w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e97a490097743ed1e1e074_kidPlayingWithFroggy%20(1)%20(1)%20(1)%20(3)-p-1600.png 1600w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e97a490097743ed1e1e074_kidPlayingWithFroggy%20(1)%20(1)%20(1)%20(3)-p-2000.png 2000w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e97a490097743ed1e1e074_kidPlayingWithFroggy%20(1)%20(1)%20(1)%20(3)-p-2600.png 2600w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e97a490097743ed1e1e074_kidPlayingWithFroggy%20(1)%20(1)%20(1)%20(3).png 3750w"
-                        class="casestudypreviewimage" /></div>
-                <div class="w-layout-blockcontainer casestudytext w-container">
-                    <h3 class="casestudyheading">Froggy: A Parent-Supported AI Learning Companion</h3>
-                    <p class="topictag">Conversation Design | User Research</p><img
-                        src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea25af105dd3fca313d2dc_arrow_right_alt_36dp_0075D4_FILL0_wght400_GRAD0_opsz40.svg"
-                        loading="lazy" alt="An blue arrow icon pointing to the right" class="casestudyarrow" />
-                </div>
-            </a><a href="https://parker-cobb.webflow.io/work/srhd" class="casestudycontainer w-inline-block">
-                <div class="w-layout-blockcontainer casestudyimage w-container"><img
-                        src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3).png"
-                        loading="lazy" width="324" sizes="(max-width: 479px) 100vw, 324px"
-                        alt="A deskop display featuring the SRHD website, the desk holding the display is in front of a group of slightly blurred people sitting in the background."
-                        srcset="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3)-p-500.png 500w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3)-p-800.png 800w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3)-p-1080.png 1080w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3)-p-1600.png 1600w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3)-p-2000.png 2000w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3)-p-2600.png 2600w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3)-p-3200.png 3200w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3).png 4231w"
-                        class="casestudypreviewimage" /></div>
-                <div class="w-layout-blockcontainer casestudytext w-container">
-                    <h3 class="casestudyheading">Lost Domain to Live Platform: Website Relaunch</h3>
-                    <p class="topictag">Website Design | Branding</p><img
-                        src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea25af105dd3fca313d2dc_arrow_right_alt_36dp_0075D4_FILL0_wght400_GRAD0_opsz40.svg"
-                        loading="lazy" alt="An blue arrow icon pointing to the right" class="casestudyarrow" />
-                </div>
-            </a><a href="https://parker-cobb.webflow.io/work/xr-experience" class="casestudycontainer w-inline-block">
-                <div class="w-layout-blockcontainer casestudyimage w-container"><img
-                        src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ed4ddeaa184f15f1f1d0c3_Indoor%201.1%20(1).png"
-                        loading="lazy" width="324" sizes="(max-width: 479px) 100vw, 324px"
-                        alt="Smartphone displaying an augmented reality view of a framed painting overlaid in a museum interior, showing a seated woman spinning yarn within an ornate gold frame."
-                        srcset="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ed4ddeaa184f15f1f1d0c3_Indoor%201.1%20(1)-p-500.png 500w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ed4ddeaa184f15f1f1d0c3_Indoor%201.1%20(1)-p-800.png 800w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ed4ddeaa184f15f1f1d0c3_Indoor%201.1%20(1).png 953w"
-                        class="casestudypreviewimage" /></div>
-                <div class="casestudytext">
-                    <h3 class="casestudyheading"><strong>Man At Work: XR Experience</strong></h3>
-                    <p class="topictag">Extended Reality Design | Interactive Art</p><img
-                        src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea25af105dd3fca313d2dc_arrow_right_alt_36dp_0075D4_FILL0_wght400_GRAD0_opsz40.svg"
-                        loading="lazy" alt="An blue arrow icon pointing to the right" class="casestudyarrow" />
-                </div>
-            </a>
         </section>
-        <section class="aboutsection">
-            <div id="AboutSection" class="w-layout-blockcontainer aboutsectionwrapper w-container">
-                <h2 class="h2">About Me:</h2>
-                <div class="w-layout-blockcontainer aboutcontentcontainer w-container">
-                    <div class="w-layout-blockcontainer abouttextcontainer w-container">
-                        <p class="main-copy blue">I’m a business-minded designer focused on building inclusive
-                            experiences that work quietly and effectively for the people using them. I believe good
-                            design should remove friction, not add to it, and I use research and real user insight to
-                            create experiences that feel clear and intentional.<br /><br />I approach design with close
-                            attention to accessibility, hierarchy, and flow. My background in marketing and IT shapes
-                            how I think about strategy and execution, helping me connect user needs to measurable
-                            business outcomes.<br /><br />Outside of work, you’ll usually find me doing various fiber
-                            arts, travelling to new places, watching procedural dramas, or dreaming about my future
-                            dogs. </p>
+        <div class="whitebackground">
+            <section id="CaseStudies" class="casestudies">
+                <h2 class="h2">Work I&#x27;m Proud Of:</h2><a
+                    href="work\educational-chatbot.html"
+                    class="casestudycontainer w-inline-block">
+                    <div class="w-layout-blockcontainer casestudyimage
+                        w-container"><img
+                            src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e97a490097743ed1e1e074_kidPlayingWithFroggy%20(1)%20(1)%20(1)%20(3).png"
+                            loading="lazy" width="Auto" sizes="(max-width:
+                            767px) 100vw, (max-width: 991px) 728px, 940px"
+                            alt="Overhead view of a child and an adult sitting
+                            on a couch using a laptop, with a learning app on
+                            screen showing a counting activity with lily pads,
+                            and a teddy bear nearby."
+                            srcset="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e97a490097743ed1e1e074_kidPlayingWithFroggy%20(1)%20(1)%20(1)%20(3)-p-500.png
+                            500w,
+                            https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e97a490097743ed1e1e074_kidPlayingWithFroggy%20(1)%20(1)%20(1)%20(3)-p-800.png
+                            800w,
+                            https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e97a490097743ed1e1e074_kidPlayingWithFroggy%20(1)%20(1)%20(1)%20(3)-p-1080.png
+                            1080w,
+                            https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e97a490097743ed1e1e074_kidPlayingWithFroggy%20(1)%20(1)%20(1)%20(3)-p-1600.png
+                            1600w,
+                            https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e97a490097743ed1e1e074_kidPlayingWithFroggy%20(1)%20(1)%20(1)%20(3)-p-2000.png
+                            2000w,
+                            https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e97a490097743ed1e1e074_kidPlayingWithFroggy%20(1)%20(1)%20(1)%20(3)-p-2600.png
+                            2600w,
+                            https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69e97a490097743ed1e1e074_kidPlayingWithFroggy%20(1)%20(1)%20(1)%20(3).png
+                            3750w"
+                            class="casestudypreviewimage" /></div>
+                    <div class="w-layout-blockcontainer casestudytext
+                        w-container">
+                        <h3 class="casestudyheading">Froggy: A Parent-Supported
+                            AI Learning Companion</h3>
+                        <p class="topictag">Conversation Design | User Research</p><img
+                            src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea25af105dd3fca313d2dc_arrow_right_alt_36dp_0075D4_FILL0_wght400_GRAD0_opsz40.svg"
+                            loading="lazy" alt="An blue arrow icon pointing to
+                            the right" class="casestudyarrow" />
                     </div>
-                    <div class="w-layout-blockcontainer aboutimage casestudycontainer w-container"><img
-                            src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/6a7a6d1835fe4312e68a8561_CowPhotoParker.png"
-                            loading="lazy" width="382.5" sizes="(max-width: 479px) 100vw, 383px"
-                            alt="A photo of Parker, a young adult with blue hair, posing next to a Highland Cow."
-                            srcset="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/6a7a6d1835fe4312e68a8561_CowPhotoParker-p-500.png 500w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/6a7a6d1835fe4312e68a8561_CowPhotoParker-p-800.png 800w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/6a7a6d1835fe4312e68a8561_CowPhotoParker-p-1080.png 1080w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/6a7a6d1835fe4312e68a8561_CowPhotoParker-p-1600.png 1600w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/6a7a6d1835fe4312e68a8561_CowPhotoParker-p-2000.png 2000w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/6a7a6d1835fe4312e68a8561_CowPhotoParker.png 2502w"
-                            class="image-9" /></div>
-                </div><a href="#ContactSection" class="casestudybuttons w-button">How can I contact you?</a>
-            </div>
-        </section>
-    </div>
-    <section class="reviewssection">
-        <h2 class="h2 white">Testomonials:</h2>
-        <div class="w-layout-blockcontainer container-13 w-container">
-            <div class="w-layout-blockcontainer reviewboxes left w-container">
-                <p class="testomonialtext">“What stood out was Parker&#x27;s ability to navigate ambiguity. There were
-                    moments where direction wasn&#x27;t fully defined, and Parker consistently helped us <strong
-                        class="bold-text">find clarity and move forward confidently</strong>. The design thinking behind
-                    every decision was evident.”</p>
-                <div class="dividerline"></div>
-                <div class="w-layout-blockcontainer nameandtitle w-container">
-                    <div class="w-layout-blockcontainer imagecontainerreferences w-container"><img
-                            src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee4aa35bbc1e4b00b674be_Beverung.jpeg"
-                            loading="lazy"
-                            alt="Headshot of a woman with straight light brown hair, smiling, wearing a dark top, with a softly blurred outdoor background."
-                            class="image-11" /></div>
-                    <p class="reviewername"><strong>Dr. Lauren Beverung<br /></strong>Chair of the Board <br />@ SRHD
-                    </p>
+                </a><a href="https://parker-cobb.webflow.io/work/srhd"
+                    class="casestudycontainer w-inline-block">
+                    <div class="w-layout-blockcontainer casestudyimage
+                        w-container"><img
+                            src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3).png"
+                            loading="lazy" width="324" sizes="(max-width: 479px)
+                            100vw, 324px"
+                            alt="A deskop display featuring the SRHD website,
+                            the desk holding the display is in front of a group
+                            of slightly blurred people sitting in the
+                            background."
+                            srcset="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3)-p-500.png
+                            500w,
+                            https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3)-p-800.png
+                            800w,
+                            https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3)-p-1080.png
+                            1080w,
+                            https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3)-p-1600.png
+                            1600w,
+                            https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3)-p-2000.png
+                            2000w,
+                            https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3)-p-2600.png
+                            2600w,
+                            https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3)-p-3200.png
+                            3200w,
+                            https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea9097bb630942a5abc60b_SRHD%20Mockup%202%20(1)%20(1)%20(3).png
+                            4231w"
+                            class="casestudypreviewimage" /></div>
+                    <div class="w-layout-blockcontainer casestudytext
+                        w-container">
+                        <h3 class="casestudyheading">Lost Domain to Live
+                            Platform: Website Relaunch</h3>
+                        <p class="topictag">Website Design | Branding</p><img
+                            src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea25af105dd3fca313d2dc_arrow_right_alt_36dp_0075D4_FILL0_wght400_GRAD0_opsz40.svg"
+                            loading="lazy" alt="An blue arrow icon pointing to
+                            the right" class="casestudyarrow" />
+                    </div>
+                </a><a href="https://parker-cobb.webflow.io/work/xr-experience"
+                    class="casestudycontainer w-inline-block">
+                    <div class="w-layout-blockcontainer casestudyimage
+                        w-container"><img
+                            src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ed4ddeaa184f15f1f1d0c3_Indoor%201.1%20(1).png"
+                            loading="lazy" width="324" sizes="(max-width: 479px)
+                            100vw, 324px"
+                            alt="Smartphone displaying an augmented reality view
+                            of a framed painting overlaid in a museum interior,
+                            showing a seated woman spinning yarn within an
+                            ornate gold frame."
+                            srcset="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ed4ddeaa184f15f1f1d0c3_Indoor%201.1%20(1)-p-500.png
+                            500w,
+                            https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ed4ddeaa184f15f1f1d0c3_Indoor%201.1%20(1)-p-800.png
+                            800w,
+                            https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ed4ddeaa184f15f1f1d0c3_Indoor%201.1%20(1).png
+                            953w"
+                            class="casestudypreviewimage" /></div>
+                    <div class="casestudytext">
+                        <h3 class="casestudyheading"><strong>Man At Work: XR
+                                Experience</strong></h3>
+                        <p class="topictag">Extended Reality Design |
+                            Interactive Art</p><img
+                            src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ea25af105dd3fca313d2dc_arrow_right_alt_36dp_0075D4_FILL0_wght400_GRAD0_opsz40.svg"
+                            loading="lazy" alt="An blue arrow icon pointing to
+                            the right" class="casestudyarrow" />
+                    </div>
+                </a>
+            </section>
+            <section class="aboutsection">
+                <div id="AboutSection" class="w-layout-blockcontainer
+                    aboutsectionwrapper w-container">
+                    <h2 class="h2">About Me:</h2>
+                    <div class="w-layout-blockcontainer aboutcontentcontainer
+                        w-container">
+                        <div class="w-layout-blockcontainer abouttextcontainer
+                            w-container">
+                            <p class="main-copy blue">I’m a business-minded
+                                designer focused on building inclusive
+                                experiences that work quietly and effectively
+                                for the people using them. I believe good
+                                design should remove friction, not add to it,
+                                and I use research and real user insight to
+                                create experiences that feel clear and
+                                intentional.<br /><br />I approach design with
+                                close
+                                attention to accessibility, hierarchy, and flow.
+                                My background in marketing and IT shapes
+                                how I think about strategy and execution,
+                                helping me connect user needs to measurable
+                                business outcomes.<br /><br />Outside of work,
+                                you’ll usually find me doing various fiber
+                                arts, travelling to new places, watching
+                                procedural dramas, or dreaming about my future
+                                dogs. </p>
+                        </div>
+                        <div class="w-layout-blockcontainer aboutimage
+                            casestudycontainer w-container"><img
+                                src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/6a7a6d1835fe4312e68a8561_CowPhotoParker.png"
+                                loading="lazy" width="382.5" sizes="(max-width:
+                                479px) 100vw, 383px"
+                                alt="A photo of Parker, a young adult with blue
+                                hair, posing next to a Highland Cow."
+                                srcset="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/6a7a6d1835fe4312e68a8561_CowPhotoParker-p-500.png
+                                500w,
+                                https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/6a7a6d1835fe4312e68a8561_CowPhotoParker-p-800.png
+                                800w,
+                                https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/6a7a6d1835fe4312e68a8561_CowPhotoParker-p-1080.png
+                                1080w,
+                                https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/6a7a6d1835fe4312e68a8561_CowPhotoParker-p-1600.png
+                                1600w,
+                                https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/6a7a6d1835fe4312e68a8561_CowPhotoParker-p-2000.png
+                                2000w,
+                                https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/6a7a6d1835fe4312e68a8561_CowPhotoParker.png
+                                2502w"
+                                class="image-9" /></div>
+                    </div><a href="#ContactSection" class="casestudybuttons
+                        w-button">How can I contact you?</a>
                 </div>
-            </div>
-            <div class="w-layout-blockcontainer reviewboxes w-container">
-                <p class="testomonialtext">&quot;Parker stands out as having incredible initiative, creativity, and
-                    versatility. Their thinking goes beyond a &#x27;get it done&#x27; mindset, bringing forward <strong
-                        class="bold-text-2">strategically aligned ideas</strong> and considerations that have
-                    strengthened their projects in meaningful ways.&quot;</p>
-                <div class="dividerline"></div>
-                <div class="w-layout-blockcontainer nameandtitle w-container">
-                    <div class="w-layout-blockcontainer imagecontainerreferences w-container"><img
-                            src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6695874551e8c7445557_LauraBruns.jpg"
-                            loading="lazy"
-                            alt="A cropped headshot of a woman with straight brown hair, smiling, wearing a light top over a dark shirt. "
-                            class="image-11" /></div>
-                    <p class="reviewername"><strong>Laura Bruns</strong><br />Senior Marketing Manager <br />@ Direct
-                        Supply</p>
-                </div>
-            </div>
+            </section>
         </div>
-        <div class="w-layout-blockcontainer container-13 w-container">
-            <div class="w-layout-blockcontainer reviewboxes left w-container">
-                <p class="testomonialtext">&quot;Parker brought thoughtful ideas to the table, <strong
-                        class="bold-text-3">grounded in both user empathy and business impact</strong>, and were eager
-                    to learn from feedback.&quot;</p>
-                <div class="dividerline"></div>
-                <div class="w-layout-blockcontainer nameandtitle w-container">
-                    <div class="w-layout-blockcontainer imagecontainerreferences w-container"><img
-                            src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee66b1ef6ebe73c7bae5fa_Mike.jpeg"
+        <section class="reviewssection">
+            <h2 class="h2 white">Testomonials:</h2>
+            <div class="w-layout-blockcontainer container-13 w-container">
+                <div class="w-layout-blockcontainer reviewboxes left
+                    w-container">
+                    <p class="testomonialtext">“What stood out was Parker&#x27;s
+                        ability to navigate ambiguity. There were
+                        moments where direction wasn&#x27;t fully defined, and
+                        Parker consistently helped us <strong
+                            class="bold-text">find clarity and move forward
+                            confidently</strong>. The design thinking behind
+                        every decision was evident.”</p>
+                    <div class="dividerline"></div>
+                    <div class="w-layout-blockcontainer nameandtitle
+                        w-container">
+                        <div class="w-layout-blockcontainer
+                            imagecontainerreferences w-container"><img
+                                src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee4aa35bbc1e4b00b674be_Beverung.jpeg"
+                                loading="lazy"
+                                alt="Headshot of a woman with straight light
+                                brown hair, smiling, wearing a dark top, with a
+                                softly blurred outdoor background."
+                                class="image-11" /></div>
+                        <p class="reviewername"><strong>Dr. Lauren Beverung<br
+                                    /></strong>Chair of the Board <br />@ SRHD
+                        </p>
+                    </div>
+                </div>
+                <div class="w-layout-blockcontainer reviewboxes w-container">
+                    <p class="testomonialtext">&quot;Parker stands out as having
+                        incredible initiative, creativity, and
+                        versatility. Their thinking goes beyond a &#x27;get it
+                        done&#x27; mindset, bringing forward <strong
+                            class="bold-text-2">strategically aligned ideas</strong>
+                        and considerations that have
+                        strengthened their projects in meaningful ways.&quot;</p>
+                    <div class="dividerline"></div>
+                    <div class="w-layout-blockcontainer nameandtitle
+                        w-container">
+                        <div class="w-layout-blockcontainer
+                            imagecontainerreferences w-container"><img
+                                src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6695874551e8c7445557_LauraBruns.jpg"
+                                loading="lazy"
+                                alt="A cropped headshot of a woman with straight
+                                brown hair, smiling, wearing a light top over a
+                                dark shirt. "
+                                class="image-11" /></div>
+                        <p class="reviewername"><strong>Laura Bruns</strong><br
+                                />Senior Marketing Manager <br />@ Direct
+                            Supply</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-layout-blockcontainer container-13 w-container">
+                <div class="w-layout-blockcontainer reviewboxes left
+                    w-container">
+                    <p class="testomonialtext">&quot;Parker brought thoughtful
+                        ideas to the table, <strong
+                            class="bold-text-3">grounded in both user empathy
+                            and business impact</strong>, and were eager
+                        to learn from feedback.&quot;</p>
+                    <div class="dividerline"></div>
+                    <div class="w-layout-blockcontainer nameandtitle
+                        w-container">
+                        <div class="w-layout-blockcontainer
+                            imagecontainerreferences w-container"><img
+                                src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee66b1ef6ebe73c7bae5fa_Mike.jpeg"
+                                loading="lazy"
+                                alt="Cropped headshot of a smiling man with a
+                                short beard wearing a gray blazer over a
+                                checkered shirt."
+                                class="image-11" /></div>
+                        <p class="reviewername"><strong>Mike Butler<br /></strong>Digital
+                            Project Manager <br />@ Direct
+                            Supply</p>
+                    </div>
+                </div>
+                <div class="w-layout-blockcontainer reviewboxes w-container">
+                    <p class="testomonialtext">&quot;Although I&#x27;ve never
+                        met them, Parker is probably a great human.
+                        You should hire them so they can adopt me and <strong
+                            class="bold-text-4">feed me lots of
+                            snacks</strong>.&quot;</p>
+                    <div class="dividerline"></div>
+                    <div class="w-layout-blockcontainer nameandtitle
+                        w-container">
+                        <div class="w-layout-blockcontainer
+                            imagecontainerreferences w-container"><img
+                                src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6eebe60b10c5d2c74c32_pexels-marina-zvada-844583049-29173441.jpg"
+                                loading="lazy" sizes="100vw"
+                                srcset="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6eebe60b10c5d2c74c32_pexels-marina-zvada-844583049-29173441-p-500.jpg
+                                500w,
+                                https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6eebe60b10c5d2c74c32_pexels-marina-zvada-844583049-29173441-p-800.jpg
+                                800w,
+                                https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6eebe60b10c5d2c74c32_pexels-marina-zvada-844583049-29173441-p-1080.jpg
+                                1080w,
+                                https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6eebe60b10c5d2c74c32_pexels-marina-zvada-844583049-29173441-p-1600.jpg
+                                1600w,
+                                https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6eebe60b10c5d2c74c32_pexels-marina-zvada-844583049-29173441-p-2000.jpg
+                                2000w,
+                                https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6eebe60b10c5d2c74c32_pexels-marina-zvada-844583049-29173441-p-2600.jpg
+                                2600w,
+                                https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6eebe60b10c5d2c74c32_pexels-marina-zvada-844583049-29173441.jpg
+                                3024w"
+                                alt="A Corgi looking up at the camera, it&#x27;s
+                                standing on a slightly blurred pile of yellow
+                                leaves."
+                                class="image-11" /></div>
+                        <p class="reviewername"><strong>Sir Buttersworth</strong><br
+                                />Non-Existent Dream Dog <br />@ Tennis
+                            Ball Manufacturing Co. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-layout-blockcontainer container-13 w-container"></div>
+            <div class="w-layout-blockcontainer container-13 w-container"></div>
+            <div class="w-layout-blockcontainer buttonholder w-container"><a
+                    href="https://www.linkedin.com/in/parker-cobb/"
+                    target="_blank" class="button-primary nospace w-button">Read
+                    the Full Testomonials on Linkedin</a></div>
+        </section>
+        <div class="div-block-8">
+            <section id="ContactSection" class="contactmesection">
+                <div class="w-layout-blockcontainer contactcontentcontainer
+                    w-container">
+                    <div class="w-layout-blockcontainer textcontainer
+                        w-container">
+                        <h1 class="h2 shortspace">Let&#x27;s Chat!</h1>
+                        <p class="main-copy blue left">I’m always open to new
+                            opportunities, collaborations, or just a good
+                            conversation. Feel free to reach out regardless of
+                            what brought you to my site. I’d love to
+                            connect!</p>
+                        <div class="w-layout-blockcontainer linkcontainer
+                            w-container"><a
+                                href="mailto:cobb.parker.22@gmail.com?subject=I%20just%20saw%20your%20portfolio..."
+                                class="contactsectionlinkblocks w-inline-block"><img
+                                    src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69eed1257f1af1d0866cab00_Email.svg"
+                                    loading="lazy" width="Auto" height="Auto"
+                                    alt="Icon representing Email in blue on a
+                                    light blue background."
+                                    class="contactsectionicons" />
+                                <div class="w-layout-blockcontainer
+                                    w-container">
+                                    <p class="main-copy blue thicc nobottom">Send
+                                        an email to<br /></p>
+                                    <p class="main-copy blue thicc nobottom">cobb.parker.22@gmail.com<br
+                                            /></p>
+                                </div>
+                            </a><a
+                                href="https://www.linkedin.com/in/parker-cobb/"
+                                target="_blank"
+                                class="contactsectionlinkblocks w-inline-block"><img
+                                    src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69eed1255496205aeedfb80b_LinkedIn.svg"
+                                    loading="lazy" width="Auto" height="Auto"
+                                    alt="Icon of a LinkedIn Logo in blue on a
+                                    light blue background."
+                                    class="contactsectionicons" />
+                                <p class="main-copy blue thicc left nobottom">Connect
+                                    on LinkedIn</p>
+                            </a><a href="https://www.youtube.com/@ParkerUX"
+                                target="_blank"
+                                class="contactsectionlinkblocks w-inline-block"><img
+                                    src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69eed126e7e9bdb2ff13e69b_YouTube.svg"
+                                    loading="lazy" width="Auto" height="Auto"
+                                    alt="Icon of a YouTube Logo in blue on a
+                                    light blue background."
+                                    class="contactsectionicons" />
+                                <p class="main-copy blue thicc left nobottom">Subscribe
+                                    on Youtube</p>
+                            </a><a
+                                href="https://drive.google.com/file/d/1qxe_ECoNgT4HAYB6szKhQK093cnmN1DI/view?usp=sharing"
+                                target="_blank" class="contactsectionlinkblocks
+                                w-inline-block"><img
+                                    src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69eed125822fbad4f5edfa20_Resume.svg"
+                                    loading="lazy" width="Auto" height="Auto"
+                                    alt="Icon of a Document Logo in blue on a
+                                    light blue background."
+                                    class="contactsectionicons" />
+                                <p class="main-copy blue thicc nobottom">Review
+                                    my Resume</p>
+                            </a></div>
+                    </div>
+                    <div class="w-layout-blockcontainer contactimagecontainer
+                        w-container"><img
+                            src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69eec7bf1f5cec291e97ce20_f208e7e456d2d5ecc102aa32441213f1_ParkerSVGCharacter.svg"
                             loading="lazy"
-                            alt="Cropped headshot of a smiling man with a short beard wearing a gray blazer over a checkered shirt."
-                            class="image-11" /></div>
-                    <p class="reviewername"><strong>Mike Butler<br /></strong>Digital Project Manager <br />@ Direct
-                        Supply</p>
+                            alt="Illustration of a person representing Parker,
+                            they&#x27;re sitting on a blue block and giving a
+                            thumbs-up while using a laptop, wearing a dark shirt
+                            and brown pants, appearing to work or study."
+                            class="contactimage" /></div>
                 </div>
-            </div>
-            <div class="w-layout-blockcontainer reviewboxes w-container">
-                <p class="testomonialtext">&quot;Although I&#x27;ve never met them, Parker is probably a great human.
-                    You should hire them so they can adopt me and <strong class="bold-text-4">feed me lots of
-                        snacks</strong>.&quot;</p>
-                <div class="dividerline"></div>
-                <div class="w-layout-blockcontainer nameandtitle w-container">
-                    <div class="w-layout-blockcontainer imagecontainerreferences w-container"><img
-                            src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6eebe60b10c5d2c74c32_pexels-marina-zvada-844583049-29173441.jpg"
-                            loading="lazy" sizes="100vw"
-                            srcset="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6eebe60b10c5d2c74c32_pexels-marina-zvada-844583049-29173441-p-500.jpg 500w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6eebe60b10c5d2c74c32_pexels-marina-zvada-844583049-29173441-p-800.jpg 800w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6eebe60b10c5d2c74c32_pexels-marina-zvada-844583049-29173441-p-1080.jpg 1080w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6eebe60b10c5d2c74c32_pexels-marina-zvada-844583049-29173441-p-1600.jpg 1600w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6eebe60b10c5d2c74c32_pexels-marina-zvada-844583049-29173441-p-2000.jpg 2000w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6eebe60b10c5d2c74c32_pexels-marina-zvada-844583049-29173441-p-2600.jpg 2600w, https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69ee6eebe60b10c5d2c74c32_pexels-marina-zvada-844583049-29173441.jpg 3024w"
-                            alt="A Corgi looking up at the camera, it&#x27;s standing on a slightly blurred pile of yellow leaves."
-                            class="image-11" /></div>
-                    <p class="reviewername"><strong>Sir Buttersworth</strong><br />Non-Existent Dream Dog <br />@ Tennis
-                        Ball Manufacturing Co. </p>
-                </div>
-            </div>
+            </section>
         </div>
-        <div class="w-layout-blockcontainer container-13 w-container"></div>
-        <div class="w-layout-blockcontainer container-13 w-container"></div>
-        <div class="w-layout-blockcontainer buttonholder w-container"><a href="https://www.linkedin.com/in/parker-cobb/"
-                target="_blank" class="button-primary nospace w-button">Read the Full Testomonials on Linkedin</a></div>
-    </section>
-    <div class="div-block-8">
-        <section id="ContactSection" class="contactmesection">
-            <div class="w-layout-blockcontainer contactcontentcontainer w-container">
-                <div class="w-layout-blockcontainer textcontainer w-container">
-                    <h1 class="h2 shortspace">Let&#x27;s Chat!</h1>
-                    <p class="main-copy blue left">I’m always open to new opportunities, collaborations, or just a good
-                        conversation. Feel free to reach out regardless of what brought you to my site. I’d love to
-                        connect!</p>
-                    <div class="w-layout-blockcontainer linkcontainer w-container"><a
-                            href="mailto:cobb.parker.22@gmail.com?subject=I%20just%20saw%20your%20portfolio..."
-                            class="contactsectionlinkblocks w-inline-block"><img
-                                src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69eed1257f1af1d0866cab00_Email.svg"
-                                loading="lazy" width="Auto" height="Auto"
-                                alt="Icon representing Email in blue on a light blue background."
-                                class="contactsectionicons" />
-                            <div class="w-layout-blockcontainer w-container">
-                                <p class="main-copy blue thicc nobottom">Send an email to<br /></p>
-                                <p class="main-copy blue thicc nobottom">cobb.parker.22@gmail.com<br /></p>
-                            </div>
-                        </a><a href="https://www.linkedin.com/in/parker-cobb/" target="_blank"
-                            class="contactsectionlinkblocks w-inline-block"><img
-                                src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69eed1255496205aeedfb80b_LinkedIn.svg"
-                                loading="lazy" width="Auto" height="Auto"
-                                alt="Icon of a LinkedIn Logo in blue on a light blue background."
-                                class="contactsectionicons" />
-                            <p class="main-copy blue thicc left nobottom">Connect on LinkedIn</p>
-                        </a><a href="https://www.youtube.com/@ParkerUX" target="_blank"
-                            class="contactsectionlinkblocks w-inline-block"><img
-                                src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69eed126e7e9bdb2ff13e69b_YouTube.svg"
-                                loading="lazy" width="Auto" height="Auto"
-                                alt="Icon of a YouTube Logo in blue on a light blue background."
-                                class="contactsectionicons" />
-                            <p class="main-copy blue thicc left nobottom">Subscribe on Youtube</p>
-                        </a><a href="https://drive.google.com/file/d/1qxe_ECoNgT4HAYB6szKhQK093cnmN1DI/view?usp=sharing"
-                            target="_blank" class="contactsectionlinkblocks w-inline-block"><img
-                                src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69eed125822fbad4f5edfa20_Resume.svg"
-                                loading="lazy" width="Auto" height="Auto"
-                                alt="Icon of a Document Logo in blue on a light blue background."
-                                class="contactsectionicons" />
-                            <p class="main-copy blue thicc nobottom">Review my Resume</p>
-                        </a></div>
+        <div data-animation="default" data-collapse="medium" data-duration="400"
+            data-easing="ease" data-easing2="ease"
+            role="banner" class="navbar-shadow-container w-nav">
+            <section class="footersection">
+                <div class="w-layout-blockcontainer footernav w-container"><a
+                        href="#CaseStudies"
+                        class="footerbuttons w-button">Work</a><a
+                        href="#AboutSection"
+                        class="footerbuttons w-button">About</a><a
+                        href="https://drive.google.com/file/d/1qxe_ECoNgT4HAYB6szKhQK093cnmN1DI/view?usp=sharing"
+                        target="_blank" class="footerbuttons w-button">Resume</a><a
+                        href="#ContactSection"
+                        class="footerbuttons w-button">Contact</a></div>
+                <div class="dividerline footer"></div>
+                <div id="Footer" class="w-layout-hflex footercontainer">
+                    <div class="w-layout-blockcontainer leftsidefootercontent
+                        w-container"><a href="#Nav"
+                            class="logowrapper w-inline-block">
+                            <h1 class="plogoformat">P</h1>
+                        </a>
+                        <p class="main-copy footer">Thank you for taking the
+                            time to look through my website. I hope one day
+                            we can meet beyond the screen.</p>
+                    </div>
+                    <ul role="list" class="nav-menu-block-2 footer
+                        w-list-unstyled">
+                        <li class="mobile-margin-top-14 right"><a href="#Nav"
+                                class="button-primary footer w-button">Back to
+                                Top</a></li>
+                    </ul>
                 </div>
-                <div class="w-layout-blockcontainer contactimagecontainer w-container"><img
-                        src="https://cdn.prod.website-files.com/69979c9b1b5eea4abe6835e3/69eec7bf1f5cec291e97ce20_f208e7e456d2d5ecc102aa32441213f1_ParkerSVGCharacter.svg"
-                        loading="lazy"
-                        alt="Illustration of a person representing Parker, they&#x27;re sitting on a blue block and giving a thumbs-up while using a laptop, wearing a dark shirt and brown pants, appearing to work or study."
-                        class="contactimage" /></div>
-            </div>
-        </section>
-    </div>
-    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
-        role="banner" class="navbar-shadow-container w-nav">
-        <section class="footersection">
-            <div class="w-layout-blockcontainer footernav w-container"><a href="#CaseStudies"
-                    class="footerbuttons w-button">Work</a><a href="#AboutSection"
-                    class="footerbuttons w-button">About</a><a
-                    href="https://drive.google.com/file/d/1qxe_ECoNgT4HAYB6szKhQK093cnmN1DI/view?usp=sharing"
-                    target="_blank" class="footerbuttons w-button">Resume</a><a href="#ContactSection"
-                    class="footerbuttons w-button">Contact</a></div>
-            <div class="dividerline footer"></div>
-            <div id="Footer" class="w-layout-hflex footercontainer">
-                <div class="w-layout-blockcontainer leftsidefootercontent w-container"><a href="#Nav"
-                        class="logowrapper w-inline-block">
-                        <h1 class="plogoformat">P</h1>
-                    </a>
-                    <p class="main-copy footer">Thank you for taking the time to look through my website. I hope one day
-                        we can meet beyond the screen.</p>
-                </div>
-                <ul role="list" class="nav-menu-block-2 footer w-list-unstyled">
-                    <li class="mobile-margin-top-14 right"><a href="#Nav" class="button-primary footer w-button">Back to
-                            Top</a></li>
-                </ul>
-            </div>
-        </section>
-    </div>
-    <script src="js/jquery.js?site=69979c9b1b5eea4abe6835e3" type="text/javascript"></script>
-    <script src="js/webflow.schunk.f383f5e6d5965c7d.js" type="text/javascript"></script>
-    <script src="js/webflow.schunk.43f4d187dbb3f1f5.js" type="text/javascript"></script>
-    <script src="js/webflow.schunk.2315c5f26dfe2bfd.js" type="text/javascript"></script>
-    <script src="js/webflow-script.js" type="text/javascript"></script>
-    <script src="js/gsap.min.js" type="text/javascript"></script>
-</body>
+            </section>
+        </div>
+        <script src="js/jquery.js?site=69979c9b1b5eea4abe6835e3"
+            type="text/javascript"></script>
+        <script src="js/webflow.schunk.f383f5e6d5965c7d.js"
+            type="text/javascript"></script>
+        <script src="js/webflow.schunk.43f4d187dbb3f1f5.js"
+            type="text/javascript"></script>
+        <script src="js/webflow.schunk.2315c5f26dfe2bfd.js"
+            type="text/javascript"></script>
+        <script src="js/webflow-script.js" type="text/javascript"></script>
+        <script src="js/gsap.min.js" type="text/javascript"></script>
+    </body>
 
 </html>
