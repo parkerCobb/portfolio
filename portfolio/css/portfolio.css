@@ -920,9 +920,12 @@ textarea.w-input, textarea.w-select {
   margin-left: 15px;
 }
 
-.w-nav-menu {
+.nav-menu {
   float: right;
   position: relative;
+  justify-content: flex-end;
+  width: 100%;
+  display: flex;
 }
 
 [data-nav-menu-open] {
@@ -996,7 +999,7 @@ textarea.w-input, textarea.w-select {
   border-radius: 8px;
 }
 
-.nav[data-collapse="all"] .w-nav-menu {
+.nav[data-collapse="all"] .nav-menu {
   display: none;
 }
 
@@ -1009,7 +1012,7 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 767px) {
-  .nav[data-collapse="small"] .w-nav-menu {
+  .nav[data-collapse="small"] .nav-menu {
     display: none;
   }
 
@@ -1023,7 +1026,7 @@ textarea.w-input, textarea.w-select {
 }
 
 @media screen and (max-width: 479px) {
-  .nav[data-collapse="tiny"] .w-nav-menu {
+  .nav[data-collapse="tiny"] .nav-menu {
     display: none;
   }
 
@@ -1447,11 +1450,7 @@ h4 {
   line-height: 1.5em;
 }
 
-.nav-text-spacer {
-  justify-content: flex-end;
-  width: 100%;
-  display: flex;
-}
+
 
 .nav-menu-block-2 {
   justify-content: center;
@@ -2147,7 +2146,7 @@ h4 {
 
 
 @media screen and (max-width: 991px) {
- .nav[data-collapse="medium"] .w-nav-menu {
+ .nav[data-collapse="medium"] .nav-menu {
     display: none;
   }
 
