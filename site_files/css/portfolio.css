@@ -82,6 +82,7 @@ button, select {
 }
 
 button, html input[type="button"], input[type="reset"] {
+  appearance: button;
   -webkit-appearance: button;
   cursor: pointer;
 }
@@ -109,6 +110,7 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 }
 
 input[type="search"] {
+  appearance: none;
   -webkit-appearance: none;
 }
 
@@ -146,7 +148,7 @@ td, th {
 }
 
 [class^="w-icon-"], [class*=" w-icon-"] {
-  speak: none;
+  appearance: none;
   font-variant: normal;
   text-transform: none;
   -webkit-font-smoothing: antialiased;
@@ -199,6 +201,7 @@ img {
 }
 
 input.globalButtons {
+  appearance: button;
   -webkit-appearance: button;
 }
 
@@ -220,54 +223,21 @@ html[data-w-dynpage] [data-w-cloak] {
   color: #0000 !important;
 }
 
-.w-webflow-badge, .w-webflow-badge > img {
-  box-sizing: unset;
-  width: unset;
-  height: unset;
-  max-height: unset;
-  max-width: unset;
-  min-height: unset;
-  min-width: unset;
-  margin: unset;
-  padding: unset;
-  float: unset;
-  clear: unset;
-  border: unset;
-  border-radius: unset;
-  background: unset;
-  background-image: unset;
-  background-position: unset;
-  background-size: unset;
-  background-repeat: unset;
-  background-origin: unset;
-  background-clip: unset;
-  background-attachment: unset;
-  background-color: unset;
-  box-shadow: unset;
-  transform: unset;
-  direction: unset;
-  font-family: unset;
-  font-weight: unset;
-  color: unset;
-  font-size: unset;
-  line-height: unset;
-  font-style: unset;
-  font-variant: unset;
-  text-align: unset;
-  letter-spacing: unset;
-  -webkit-text-decoration: unset;
-  text-decoration: unset;
-  text-indent: unset;
-  text-transform: unset;
-  list-style-type: unset;
-  text-shadow: unset;
-  vertical-align: unset;
-  cursor: unset;
-  white-space: unset;
-  word-break: unset;
-  word-spacing: unset;
-  word-wrap: unset;
-  transition: unset;
+.cursor {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+  border-color: var(--_colors---parker-blue);
+}
+
+.cursor-stop {
+  border-color: transparent;
+
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -356,6 +326,7 @@ fieldset {
 
 button, [type="button"], [type="reset"] {
   cursor: pointer;
+  appearance: button;
   -webkit-appearance: button;
   border: 0;
 }
@@ -907,7 +878,7 @@ h4 {
   background-color: #1b3166;
 }
 
-.herosection {
+.hero-section {
   z-index: 0;
   background-color: var(--_colors---parker-dark-blue);
   pointer-events: auto;
@@ -934,7 +905,7 @@ h4 {
   top: 15vh;
 }
 
-.herotextcontainer {
+.hero-text-container {
   grid-column-gap: 25px;
   grid-row-gap: 25px;
   flex-direction: column;
@@ -947,7 +918,7 @@ h4 {
   display: flex;
 }
 
-.heroheading {
+.hero-heading {
   color: var(--_colors---parker-snow);
   margin-top: 0;
   margin-bottom: 0;
@@ -1085,7 +1056,7 @@ h4 {
   display: flex;
 }
 
-.portfolioherosection {
+.portfoliohero-section {
   max-width: 960px;
   margin-top: 0;
   margin-left: auto;
@@ -1940,7 +1911,7 @@ h4 {
     font-size: 1.1em;
   }
 
-  .herosection {
+  .hero-section {
     height: auto;
   }
 
@@ -1955,7 +1926,7 @@ h4 {
     padding-top: 2em;
   }
 
-  .herotextcontainer {
+  .hero-text-container {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     justify-content: flex-start;
@@ -1967,7 +1938,7 @@ h4 {
     padding-top: 0;
   }
 
-  .heroheading {
+  .hero-heading {
     font-size: 3.9em;
     line-height: 1em;
   }
@@ -2011,7 +1982,7 @@ h4 {
     margin-left: 0;
   }
 
-  .portfolioherosection {
+  .portfoliohero-section {
     max-width: none;
     margin-left: 5em;
     margin-right: 5em;
@@ -2353,7 +2324,7 @@ h4 {
     width: auto;
   }
 
-  .herosection {
+  .hero-section {
     margin-top: 0;
   }
 
@@ -2362,7 +2333,7 @@ h4 {
     margin-right: 5em;
   }
 
-  .heroheading {
+  .hero-heading {
     text-align: center;
     font-size: 3.57em;
   }
@@ -2660,7 +2631,7 @@ h4 {
     font-size: 1.3em;
   }
 
-  .herosection {
+  .hero-section {
     margin-top: 0;
   }
 
@@ -2672,7 +2643,7 @@ h4 {
     padding-top: 0;
   }
 
-  .herotextcontainer {
+  .hero-text-container {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     justify-content: flex-start;
@@ -2680,7 +2651,7 @@ h4 {
     margin-left: 0;
   }
 
-  .heroheading {
+  .hero-heading {
     text-align: center;
     padding-top: 10px;
     font-size: 3em;
@@ -2741,7 +2712,7 @@ h4 {
     margin: 1em auto 1em 0;
   }
 
-  .portfolioherosection {
+  .portfoliohero-section {
     margin-top: -2em;
     margin-left: 3em;
     margin-right: 3em;
