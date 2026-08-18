@@ -182,7 +182,7 @@ img {
   display: inline-block;
 }
 
-.buttons {
+.globalButtons {
   background-color: var(--_colors---parker-blue);
   color: var(--_colors---parker-snow);
   font-family: Albert Sans, sans-serif;
@@ -198,7 +198,7 @@ img {
   border-radius: 8px;
 }
 
-input.buttons {
+input.globalButtons {
   -webkit-appearance: button;
 }
 
@@ -1397,7 +1397,7 @@ h4 {
   left: 0;
 }
 
-.casestudybuttons {
+.casestudyglobalButtons {
   background-color: var(--_colors---parker-blue);
   border-radius: 8px;
   width: auto;
@@ -1769,7 +1769,7 @@ h4 {
   width: 100%;
 }
 
-.footerbuttons {
+.footerglobalButtons {
   color: var(--_colors---parker-snow);
   background-color: #0000;
   margin-right: 1em;
@@ -1779,7 +1779,7 @@ h4 {
   font-size: 1.1em;
 }
 
-.footerbuttons.w--current {
+.footerglobalButtons.w--current {
   width: auto;
   color: var(--_colors---parker-snow);
   background-color: #3898ec00;
@@ -2566,7 +2566,7 @@ h4 {
     margin-top: 2em;
   }
 
-  .footerbuttons {
+  .footerglobalButtons {
     margin-right: 0;
   }
 
@@ -2902,7 +2902,7 @@ h4 {
     line-height: 2.5em;
   }
 
-  .casestudybuttons {
+  .casestudyglobalButtons {
     text-align: center;
     font-size: 1.2em;
     line-height: 1.2em;
@@ -3024,13 +3024,13 @@ h4 {
     padding-top: 5em;
   }
 
-  .footerbuttons {
+  .footerglobalButtons {
     margin-right: 0;
     padding-bottom: 1em;
     font-size: 1.3em;
   }
 
-  .footerbuttons.w--current {
+  .footerglobalButtons.w--current {
     margin-right: 0;
     font-size: 1.3em;
   }
