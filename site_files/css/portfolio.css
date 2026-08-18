@@ -1447,18 +1447,9 @@ h4 {
   line-height: 1.5em;
 }
 
-
-
 .nav-menu-block-2 {
-  justify-content: center;
   align-items: center;
-  margin-bottom: 0;
   display: flex;
-}
-
-.nav-menu-block-2.footer {
-  justify-content: flex-end;
-  align-items: center;
 }
 
 .heroimage {
@@ -2318,10 +2309,6 @@ h4 {
   }
 
   .nav-menu-block-2.footer {
-    grid-column-gap: 0em;
-    grid-row-gap: 0em;
-    justify-content: flex-end;
-    align-items: flex-start;
     width: auto;
     margin-top: 0;
     padding-left: 0;
@@ -3109,10 +3096,6 @@ h4 {
   .casestudytitle {
     text-align: left;
     width: 100%;
-  }
-
-  .nav-menu-block-2 {
-    width: 60%;
   }
 
   .nav-menu-block-2.footer {
