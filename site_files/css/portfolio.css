@@ -596,27 +596,11 @@ textarea.w-input, textarea.w-select {
   --_colors---parker-dark-blue: #001731;
 }
 
-.w-layout-blockcontainer {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
 .w-layout-hflex {
   flex-direction: row;
   align-items: flex-start;
   display: flex;
 }
-
-
-
-@media screen and (max-width: 767px) {
-  .w-layout-blockcontainer {
-    max-width: none;
-  }
-}
-
 
 h4 {
   margin-top: 10px;
@@ -1659,7 +1643,8 @@ h4 {
   }
 
   #backToTopButtonHolder {
-    display: flex;
+    display: block;
+    width: 100%;
     text-align: center;
     justify-content: center;
     margin-left: 1em;
@@ -1669,20 +1654,12 @@ h4 {
     max-width: 728px;
   }
 
-  .w-layout-blockcontainer {
-    max-width: 728px;
-  }
-
   .nav[data-collapse="medium"] .nav-button {
     display: block;
   }
   
   .navbar-wrapper {
     width: 100%;
-  }
-
-  .w-layout-blockcontainer {
-    max-width: 728px;
   }
 
   .button-primary {
