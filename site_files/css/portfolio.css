@@ -193,7 +193,7 @@ img {
   line-height: 1.3em;
   font-size: 1.3em;
   text-decoration: none;
-  cursor: pointer;
+  cursor: url("assets/meta_images/pointer.svg"), auto;
   padding: .6em 1.1em;
   display: inline-block;
   border: .1em solid var(--_colors---parker-snow);
