@@ -12,6 +12,8 @@ body {
   min-height: 100%;
 }
 
+a { cursor: url("https://parkercobb.github.io/portfolio/site_files/assets/meta_images/pointer.svg"), auto; }
+
 [hidden] {
   display: none;
 }
@@ -197,7 +199,7 @@ img {
   display: inline-block;
   border: .1em solid var(--_colors---parker-snow);
   border-radius: 8px;
-  cursor: url("assets/meta_images/pointer.svg"), auto;
+  cursor: url("https://parkercobb.github.io/portfolio/site_files/assets/meta_images/pointer.svg"), auto;
 }
 
 input.globalButtons {
@@ -1486,6 +1488,7 @@ h4 {
   display: flex;
   position: relative;
   box-shadow: inset 3px 3px 4px 3px #0003, 4px 4px 0 3px var(--_colors---parker-blue);
+  cursor: url("https://parkercobb.github.io/portfolio/site_files/assets/meta_images/cursor-light.svg"), auto;
 }
 
 .reviewboxes.left {
