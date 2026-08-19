@@ -12,7 +12,7 @@ body {
   min-height: 100%;
 }
 
-a { cursor: url("https://parkercobb.github.io/portfolio/site_files/assets/meta_images/pointer.svg"), auto; }
+a, button { cursor: url("https://parkercobb.github.io/portfolio/site_files/assets/meta_images/pointer.svg"), auto; }
 
 [hidden] {
   display: none;
@@ -575,7 +575,7 @@ h4 {
   display: flex;
 }
 
-.hero-heading {
+#hero-heading {
   color: var(--_colors---parker-snow);
   margin-top: 0;
   margin-bottom: 0;
@@ -1009,6 +1009,7 @@ h4 {
   padding-top: 5vh;
   padding-bottom: 15vh;
   display: flex;
+
 }
 
 .aboutimage {
@@ -1022,29 +1023,45 @@ h4 {
   overflow: clip;
 }
 
-.aboutimage.casestudycontainer {
-  aspect-ratio: 1;
-  margin-top: 0;
-  margin-bottom: 0;
+
+
+#tooltip {
+  position: absolute;
+  bottom: 105%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--_colors---parker-dark-blue);
+  color: var(--_colors---parker-snow);
+  padding: .8em;
+  border-radius: 6px;
+  font-family: "Albert Sans", sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 10;
 }
 
-#about-sectionwrapper {
-  flex-flow: column;
-  flex: 0 auto;
-  justify-content: flex-start;
-  align-self: center;
-  align-items: flex-start;
-  width: 100%;
-  max-width: 960px;
-  height: auto;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-  padding-top: 6vh;
-  padding-bottom: 6em;
-  display: flex;
-  position: static;
-  inset: 0 0 2em;
+#tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--_colors---parker-dark-blue) transparent transparent transparent;
+}
+
+#cow-container:hover #tooltip {
+  opacity: 1;
+}
+
+button{
+  padding-block: 0;
+  padding-inline: 0;
 }
 
 .spacer {
@@ -1229,9 +1246,6 @@ h4 {
   align-items: flex-start;
   width: 100%;
   max-width: 100%;
-  margin-bottom: 2.5em;
-  margin-left: 0;
-  margin-right: 0;
   display: flex;
 }
 
@@ -1536,7 +1550,7 @@ h4 {
     padding-top: 0;
   }
 
-  .hero-heading {
+  #hero-heading {
     font-size: 3.9em;
     line-height: 1em;
   }
@@ -1737,8 +1751,8 @@ h4 {
 
   #about-section {
     max-width: none;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 5em;
+    margin-right: 5em;
   }
 
   .aboutimage {
@@ -1752,19 +1766,6 @@ h4 {
 
   .aboutimage.casestudycontainer {
     margin-top: 3em;
-  }
-
-  #about-sectionwrapper {
-    flex-flow: column;
-    justify-content: flex-start;
-    align-self: flex-start;
-    align-items: flex-start;
-    width: auto;
-    max-width: none;
-    height: auto;
-    margin-left: 5em;
-    margin-right: 5em;
-    position: static;
   }
 
   .pixelimage {
@@ -1926,7 +1927,7 @@ h4 {
     margin-right: 5em;
   }
 
-  .hero-heading {
+  #hero-heading {
     text-align: center;
     font-size: 3.57em;
   }
@@ -2208,7 +2209,7 @@ h4 {
     margin-left: 0;
   }
 
-  .hero-heading {
+  #hero-heading {
     text-align: center;
     padding-top: 10px;
     font-size: 3em;
@@ -2425,8 +2426,8 @@ h4 {
   }
 
   #about-section {
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: 5em;
+    margin-right: 5em;
   }
 
   .aboutimage {
@@ -2438,11 +2439,6 @@ h4 {
     max-width: none;
     min-height: 0;
     overflow: hidden;
-  }
-
-  #about-sectionwrapper {
-    margin-left: 3em;
-    margin-right: 3em;
   }
 
   .spacer.short {

@@ -8,7 +8,7 @@ function playMoo() {
 document.addEventListener('DOMContentLoaded', function() {
 
 function typeWriter(text, i) {
-    const typeText = document.querySelector(".hero-heading");
+    const typeText = document.querySelector("#hero-heading");
     if (i < text.length) {
         typeText.innerHTML = text.substring(0, i + 1) + '<span class="cursor"></span>';
 

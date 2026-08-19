@@ -95,7 +95,7 @@
                     <!--Would love to see a higher definition photo here-->
                     <img src="assets/home_page/parker_background_removed.webp" loading="eager" alt="A cutout headshot of a person with short brown hair, their figure is surrounded in a white outline that contrasts the background." id="HeroPhoto" class="heroimage" />
                     <div class="hero-text-container">
-                        <h1 class="hero-heading">Hi, I&#x27;m Parker.</h1>
+                        <h1 id="hero-heading">Hi, I&#x27;m Parker.</h1>
                         <h2 class="herosubhead">I&#x27;m a digital product designer empowering users with inclusive solutions that drive impactful experiences.</h2>
                         <div id = "two-button-container">
                             <a href="#ContactSection" class="button-secondary globalButtons">Let&#x27;s Connect</a>
@@ -181,9 +181,13 @@
                                 procedural dramas, or dreaming about my future dogs. 
                             </p>
                         </div>
-                        <div class="aboutimage
-                            casestudycontainer "><img
-                                src="assets/home_page/about-me.webp" loading="lazy" alt="A photo of Parker, a young adult with blue hair, posing next to a Highland Cow." class="image-9"/>
+                        <div>
+                            <div id = "cow-container" style = "position: relative;">
+                                <div id="tooltip">🐄 Click Me! (Sound on)</div>
+                                <button class="aboutimage casestudycontainer" onclick="playMoo()">
+                                    <img src="assets/home_page/about-me.webp" loading="lazy" alt="A photo of Parker, a young adult with blue hair, posing next to a Highland Cow." class="image-9"/>
+                                </button>
+                            </div>
                         </div>
                     </div><a href="#ContactSection" class="casestudyglobalButtons globalButtons">How can I contact you?</a>
                 </section>
