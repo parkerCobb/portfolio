@@ -84,7 +84,7 @@ button, select {
 button, html input[type="button"], input[type="reset"] {
   appearance: button;
   -webkit-appearance: button;
-  cursor: pointer;
+  
 }
 
 button[disabled], html input[disabled] {
@@ -193,11 +193,11 @@ img {
   line-height: 1.3em;
   font-size: 1.3em;
   text-decoration: none;
-  cursor: url("assets/meta_images/pointer.svg"), auto;
   padding: .6em 1.1em;
   display: inline-block;
   border: .1em solid var(--_colors---parker-snow);
   border-radius: 8px;
+  cursor: url("assets/meta_images/pointer.svg"), auto;
 }
 
 input.globalButtons {
@@ -207,7 +207,6 @@ input.globalButtons {
 
 :where(button.w-popover-trigger) {
   color: inherit;
-  cursor: pointer;
   font: inherit;
   line-height: inherit;
   text-align: inherit;
@@ -325,7 +324,6 @@ fieldset {
 }
 
 button, [type="button"], [type="reset"] {
-  cursor: pointer;
   appearance: button;
   -webkit-appearance: button;
   border: 0;
@@ -937,7 +935,7 @@ h4 {
   min-height: 20vh;
   box-shadow: inset 3px 3px 5px 3px #0003, 5px 5px 0 4px var(--_colors---parker-blue);
   -webkit-text-fill-color: inherit;
-  cursor: pointer;
+  
   background-clip: border-box;
   border-radius: 20px;
   flex-flow: row;
@@ -1660,7 +1658,6 @@ h4 {
 
 .whitebackground {
   background-color: var(--_colors---parker-snow);
-  cursor: url("https://parkercobb.github.io/portfolio/site_files/assets/meta_images/cursor-light.svg"), auto;
 }
 
 .abouttextcontainer {
