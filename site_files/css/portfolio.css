@@ -10,7 +10,7 @@ body {
   font-size: 14px;
   line-height: 14px;
   min-height: 100%;
-  cursor: url("../assets/meta_images/cursor-dark.png"), auto;
+  cursor: url("https://parkercobb.github.io/portfolio/site_files/assets/meta_images/cursor-dark.png"), auto;
 }
 
 [hidden] {
@@ -1661,7 +1661,7 @@ h4 {
 
 .whitebackground {
   background-color: var(--_colors---parker-snow);
-  cursor: url("../assets/meta_images/cursor-light.png"), auto;
+  cursor: url("https://parkercobb.github.io/portfolio/site_files/assets/meta_images/cursor-light.png"), auto;
 }
 
 .abouttextcontainer {
