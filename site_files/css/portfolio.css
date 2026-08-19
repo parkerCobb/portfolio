@@ -959,7 +959,7 @@ h4 {
   display: inline-block;
 }
 
-.tworightbuttoncontainer {
+#two-button-container {
   width: 100%;
   max-width: 940px;
   margin-left: auto;
@@ -1784,7 +1784,7 @@ h4 {
     margin-bottom: 1em;
   }
 
-  .tworightbuttoncontainer {
+  #two-button-container {
     flex-flow: row;
     justify-content: center;
     align-items: center;
@@ -2151,7 +2151,7 @@ h4 {
     width: 100%;
   }
 
-  .tworightbuttoncontainer {
+  #two-button-container {
     flex-flow: column;
     width: 65%;
   }
@@ -2541,7 +2541,7 @@ h4 {
     width: 100%;
   }
 
-  .tworightbuttoncontainer {
+  #two-button-container {
     flex-flow: column;
     width: 100%;
     max-width: none;
