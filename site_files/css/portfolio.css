@@ -1233,7 +1233,7 @@ button{
   align-self: center;
   align-items: flex-start;
   width: auto;
-  max-width: 80%;
+  max-width: 100%;
   margin-left: 0;
   display: flex;
 }
@@ -1365,6 +1365,7 @@ button{
   padding-right: 2em;
   font-family: Albert Sans, sans-serif;
   font-size: 1.1em;
+  border: none;
 }
 
 .footerglobalButtons.w--current {
@@ -1376,6 +1377,7 @@ button{
   padding-right: 2em;
   font-family: Albert Sans, sans-serif;
   font-size: 1.1em;
+  
 }
 
 .footernav {
@@ -1453,6 +1455,10 @@ button{
   border: 2px solid var(--_colors---parker-snow);
   border-radius: 8px;
   text-decoration: none;
+  width: 20vw;
+  margin-left: 2em;
+  text-align: center;
+  display: block;
 }
 
 ._404text {
@@ -1494,11 +1500,10 @@ button{
   }
 
   #backToTopButtonHolder {
-    display: block;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    margin-left: 1em;
+    display: flex;
+    width: auto;
+    justify-content: right;
+    margin-left: 2em;
   }
 
    .w-container {
@@ -1820,7 +1825,6 @@ button{
     justify-content: space-between;
     align-items: center;
     max-width: none;
-    margin-right: 5px;
   }
 
   .aboutcontentcontainer {
@@ -1899,10 +1903,14 @@ button{
     margin-top: 2em;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: right;
+    margin-left: 0;
   }
-
+  
+  #backtoTop{
+    width: 100%;
+    margin-left: 0;
+  }
 
   .button-primary {
     width: 100%;
@@ -2113,9 +2121,8 @@ button{
   }
 
   .leftsidefootercontent {
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
+    justify-content: left;
+    margin-left: 0;
   }
 
   .fullimageholder {
@@ -2495,7 +2502,6 @@ button{
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    margin-left: auto;
   }
 
   .fullimageholder {
@@ -2544,6 +2550,17 @@ button{
   .image-12 {
     position: static;
   }
+
+  #backToTopButtonHolder {
+    margin-left: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #backtoTop{
+    width: 80%;
+  }
+
 
   ._404text {
     margin-right: 0;
