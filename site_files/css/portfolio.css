@@ -1014,10 +1014,8 @@ h4 {
 
 .aboutimage {
   aspect-ratio: auto;
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 2em;
-  margin-left: 0;
-  margin-right: 0;
   display: flex;
   position: relative;
   overflow: clip;
@@ -1275,8 +1273,8 @@ button{
   vertical-align: baseline;
   object-fit: scale-down;
   border-radius: 20px;
-  width: 100%;
   height: auto;
+  object-fit: cover;
   padding-bottom: 0;
   position: relative;
   overflow: hidden;
@@ -1559,9 +1557,6 @@ button{
     line-height: 1em;
   }
 
-  .casestudycontainer {
-    min-height: 40vh;
-  }
 
   #case-studies {
     max-width: none;
@@ -1836,7 +1831,6 @@ button{
   .image-9 {
     vertical-align: middle;
     object-fit: cover;
-    height: 100%;
   }
 
   .contactmesection {
@@ -2073,10 +2067,6 @@ button{
   .aboutimage {
     width: 100%;
     max-width: 100%;
-  }
-
-  .aboutimage.casestudycontainer {
-    width: 40vh;
   }
 
   .reviewssection {
@@ -2429,13 +2419,8 @@ button{
   }
 
   #about-section {
-    margin-left: 5em;
-    margin-right: 5em;
-  }
-
-  .aboutimage {
-    height: auto;
-    min-width: 100%;
+    margin-left: 3em;
+    margin-right: 3em;
   }
 
   .spacer.short {
@@ -2516,11 +2501,6 @@ button{
   .fullimageholder {
     margin-top: 2em;
     padding: 1em;
-  }
-
-  .image-9 {
-    max-width: none;
-    position: absolute;
   }
 
   #about-text-container {
