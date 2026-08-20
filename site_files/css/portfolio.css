@@ -1519,6 +1519,10 @@ button{
     text-align: center;
   }
 
+  #tooltip{
+    opacity: 0 !important;
+  }
+
   .button-primary.footer {
     font-size: 1.1em;
   }
@@ -1756,7 +1760,6 @@ button{
   }
 
   .aboutimage {
-    width: 60%;
     max-width: 100%;
     margin-bottom: 2em;
     margin-left: 0;
@@ -2073,7 +2076,7 @@ button{
   }
 
   .aboutimage.casestudycontainer {
-    width: 80%;
+    width: 40vh;
   }
 
   .reviewssection {
@@ -2431,14 +2434,8 @@ button{
   }
 
   .aboutimage {
-    max-width: 100%;
-  }
-
-  .aboutimage.casestudycontainer {
-    width: 100%;
-    max-width: none;
-    min-height: 0;
-    overflow: hidden;
+    height: auto;
+    min-width: 100%;
   }
 
   .spacer.short {
