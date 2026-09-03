@@ -353,10 +353,6 @@ label {
 .w-richtext figure img {
   width: 100%;
 }
-.w-richtext figure div {
-  color: #0000;
-  font-size: 0;
-}
 
 .nav-menu {
   float: right;
@@ -736,13 +732,11 @@ h4 {
 }
 
 .main-copy.blue.thicc.nobottom {
-  text-align: left;
   cursor: auto;
   margin-bottom: 0;
 }
 
 .main-copy.nobottom {
-  text-align: center;
   margin-bottom: 0;
   margin-left: 1.5em;
 }
@@ -1157,7 +1151,7 @@ button{
   top: 0;
 }
 
-.contactimagecontainer {
+.contact-image-container {
   width: 40%;
   display: flex;
 }
@@ -1166,16 +1160,16 @@ button{
   display: flex;
 }
 
-.contactimage {
+.contact-image {
   width: 100%;
-  transform-style: preserve-3d;
+  padding-top: 2em;
 }
 
 .textcontainer {
   width: 60%;
 }
 
-.linkcontainer {
+.link-collection-container {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   flex-flow: column;
@@ -1183,13 +1177,13 @@ button{
   display: flex;
 }
 
-.contactsectionicons {
+.contact-section-icons {
   width: 4em;
   height: 4em;
   margin-right: 1em;
 }
 
-.contactsectionlinkblocks {
+.contact-section-link-blocks {
   align-items: center;
   display: flex;
 }
@@ -2023,17 +2017,11 @@ strong {
     padding-top: 0;
   }
 
-  .contactimagecontainer {
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 0;
-  }
-
   .contact-content-container {
     flex-flow: column;
   }
 
-  .contactimage {
+  .contact-image {
     transform: rotateX(0)rotateY(180deg)rotateZ(0);
   }
 
@@ -2373,18 +2361,16 @@ strong {
     margin-top: 0;
   }
 
-  .contactimagecontainer {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+  .contact-image-container {
+    width: 100%;
   }
 
-  .contactsectionicons {
+  .contact-section-icons {
     margin-right: 0;
     margin-bottom: 1em;
   }
 
-  .contactsectionlinkblocks {
+  .contact-section-link-blocks {
     flex-flow: column;
     justify-content: center;
     align-items: center;
