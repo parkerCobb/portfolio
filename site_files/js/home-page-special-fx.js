@@ -1,5 +1,5 @@
 const mooSound = new Audio(
-  "/site_files/assets/home_page/animal_bull_scottish_highland_moo_002.mp3"
+  "site_files/assets/home_page/animal_bull_scottish_highland_moo_002.mp3"
 );
 
 function playMoo() {
