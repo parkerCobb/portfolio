@@ -118,6 +118,7 @@ input[type="search"] {
 
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
+  appearance: none;
 }
 
 legend {
@@ -127,6 +128,13 @@ legend {
 
 textarea {
   overflow: auto;
+}
+
+a {
+  -webkit-user-drag: none;
+  user-select: text;
+  cursor: url("https://parkercobb.github.io/portfolio/site_files/assets/meta_images/pointer.svg"), auto !important;
+  text-decoration: none;
 }
 
 optgroup {
@@ -340,10 +348,6 @@ label {
 .w-richtext figure {
   max-width: 60%;
   position: relative;
-}
-
-.w-richtext figure > div:before {
-  cursor: default !important;
 }
 
 .w-richtext figure img {
@@ -647,10 +651,6 @@ h4 {
   color: var(--_colors---parker-snow);
 }
 
-.shortspace {
-  margin-bottom: 3vh;
-}
-
 .portherocontainer {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -927,7 +927,7 @@ h4 {
   padding-left: 0;
 }
 
-.logowrapper {
+.logo-wrapper {
   background-color: var(--_colors---parker-snow);
   border-radius: 10px;
   text-decoration: none;
@@ -951,7 +951,7 @@ h4 {
   background-color: var(--_colors---parker-blue);
 }
 
-.navSpacer {
+.nav-spacer {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
@@ -1152,14 +1152,6 @@ button{
   display: flex;
 }
 
-.buttonholder {
-  flex-flow: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding-bottom: 1em;
-  display: flex;
-}
-
 .section-4 {
   position: static;
   top: 0;
@@ -1170,10 +1162,7 @@ button{
   display: flex;
 }
 
-.contactcontentcontainer {
-  flex-flow: row;
-  justify-content: flex-start;
-  align-items: stretch;
+.contact-content-container {
   display: flex;
 }
 
@@ -1184,18 +1173,13 @@ button{
 
 .textcontainer {
   width: 60%;
-  margin-left: 0;
-  padding-right: 20px;
 }
 
 .linkcontainer {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   flex-flow: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-left: 0;
-  padding-top: 1em;
+  padding-top: 2em;
   display: flex;
 }
 
@@ -1206,9 +1190,7 @@ button{
 }
 
 .contactsectionlinkblocks {
-  justify-content: flex-start;
   align-items: center;
-  text-decoration: none;
   display: flex;
 }
 
@@ -1277,8 +1259,7 @@ button{
   margin-right: 4em;
 }
 
-.contactmesection {
-  background-color: var(--_colors---parker-snow);
+#contact-section {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
@@ -1693,7 +1674,7 @@ strong {
     padding-left: 1.1em;
   }
 
-  .navSpacer {
+  .nav-spacer {
     justify-content: space-between;
     align-items: center;
     max-width: none;
@@ -1777,15 +1758,6 @@ strong {
     line-height: 1.3em;
   }
 
-  .contactcontentcontainer {
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
   .footercontainer {
     justify-content: space-between;
     align-items: center;
@@ -1797,7 +1769,7 @@ strong {
     width: 100%;
   }
 
-  .contactmesection {
+  #contact-section {
     max-width: none;
     margin-left: 5em;
     margin-right: 5em;
@@ -2057,10 +2029,8 @@ strong {
     margin-left: 0;
   }
 
-  .contactcontentcontainer {
+  .contact-content-container {
     flex-flow: column;
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 
   .contactimage {
@@ -2240,11 +2210,6 @@ strong {
     display: block;
   }
 
-  .main-copy.blue.thicc.nobottom {
-    text-align: center;
-    margin-left: 0;
-  }
-
   .main-copy.blue.left {
     text-align: center;
   }
@@ -2358,7 +2323,7 @@ strong {
     display: flex;
   }
 
-  .navSpacer {
+  .nav-spacer {
     margin-left: 3em;
     margin-right: 3em;
     padding-left: 0;
@@ -2408,32 +2373,14 @@ strong {
     margin-top: 0;
   }
 
-  .buttonholder {
-    max-width: 100%;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-bottom: 2em;
-  }
-
   .contactimagecontainer {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .textcontainer {
-    margin-right: 0;
-    padding-right: 0;
-  }
-
-  .linkcontainer {
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 2em;
-  }
-
   .contactsectionicons {
+    margin-right: 0;
     margin-bottom: 1em;
   }
 
@@ -2465,7 +2412,7 @@ strong {
     margin-right: 0;
   }
 
-  .contactmesection {
+  #contact-section {
     margin-left: 3em;
     margin-right: 3em;
     padding-top: 5em;
