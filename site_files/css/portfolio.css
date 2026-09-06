@@ -28,6 +28,19 @@ mark {
 
 .hamburger-icon {
   display: none;
+  font-size: 1.5em;
+  margin: 0, 6px;
+}
+
+.hamburger-icon span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin: 6px 0;
+  padding: 0;
+  border: 0;
+  border-radius: 2px;
+  background-color: var(--_colors---parker-snow);
 }
 
 small {
@@ -188,10 +201,6 @@ th {
   font-weight: normal;
   line-height: 1;
   font-family: webflow-icons !important;
-}
-
-.w-icon-nav-menu:before {
-  content: "";
 }
 
 * {
@@ -392,18 +401,6 @@ label {
   display: flex;
 }
 
-[data-nav-menu-open] {
-  text-align: center;
-  background: #c8c8c8;
-  min-width: 200px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  overflow: visible;
-  display: block !important;
-}
-
 .w--nav-link-open {
   display: block;
   position: relative;
@@ -417,10 +414,6 @@ label {
   left: 0;
   right: 0;
   overflow: hidden;
-}
-
-.w-nav-overlay [data-nav-menu-open] {
-  top: 0;
 }
 
 .nav[data-animation="over-left"] .w-nav-overlay {
@@ -456,23 +449,20 @@ label {
   align-items: center;
 }
 
-.nav-button {
-  font-size: 24px;
+.nav-button{
+  display: none;
+  background-color: var(--_colors---parker-dark-blue);
+  padding: 6px;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
 }
 
-.nav-button.w--open {
+.nav-button.is-open {
+  display: block;
   background-color: var(--_colors---parker-blue);
   border-radius: 8px;
-}
-
-.nav[data-collapse="all"] .nav-menu {
-  display: none;
-}
-
-.nav[data-collapse="all"] .nav-button,
-.w--nav-dropdown-open,
-.w--nav-dropdown-toggle-open {
-  display: block;
+  padding: 6px;
 }
 
 .w--nav-dropdown-list-open {
@@ -480,6 +470,7 @@ label {
 }
 
 @media screen and (max-width: 767px) {
+
   .nav[data-collapse="small"] .nav-menu {
     display: none;
   }
@@ -1471,6 +1462,19 @@ strong {
 }
 
 @media screen and (max-width: 991px) {
+  .nav-button {
+    display: block;
+  }
+  
+
+  .nav-menu {
+    display: none;
+  }
+  
+  .nav-menu.is-open {
+    display: block;
+   }
+
   .nav[data-collapse="medium"] .nav-menu {
     display: none;
   }
@@ -1684,8 +1688,6 @@ strong {
 
   .hamburger-icon {
     display: block;
-    color: var(--_colors---parker-snow);
-    font-size: 2.5em;
   }
 
   .secondaryNavCTAs {
@@ -2002,10 +2004,6 @@ strong {
 
   .list-spacing {
     width: 60%;
-  }
-
-  .hamburger-icon {
-    font-size: 2em;
   }
 
   .overlayBackground {

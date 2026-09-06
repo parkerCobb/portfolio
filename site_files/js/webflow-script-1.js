@@ -114,10 +114,8 @@
                     ],
                   },
                 ]
-              ),
-              window.dispatchEvent(new CustomEvent("__wf_ix3_ready")),
-              document.documentElement.classList.add("w-mod-ix3"));
-          });
+              )
+          )});
         }
         "complete" === document.readyState
           ? e()
