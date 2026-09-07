@@ -389,20 +389,6 @@ label {
   display: flex;
 }
 
-.w--nav-link-open {
-  display: block;
-  position: relative;
-}
-
-.w-nav-overlay {
-  width: 100%;
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  overflow: hidden;
-}
 
 .nav {
   background-color: var(--_colors---parker-dark-blue);
@@ -425,14 +411,9 @@ label {
 }
 
 .nav-button.is-open {
-  display: block;
   background-color: var(--_colors---parker-blue);
   border-radius: 8px;
   padding: 6px;
-}
-
-.w--nav-dropdown-list-open {
-  position: static;
 }
 
 @keyframes spin {
@@ -1621,10 +1602,11 @@ strong {
 
   .nav-spacer {
     justify-content: space-between;
-    align-items: center;
     max-width: none;
     margin-left: 5em;
     margin-right: 5em;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .nav {
@@ -2382,5 +2364,31 @@ strong {
 
   #backtoTop {
     width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .nav-menu,
+  .overlayBackground {
+    width: 100%;
+  }
+
+  .nav-item-wrapper {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 2em;
+  }
+
+  .list-spacing {
+    flex: 1 1 0;
+    width: auto;
+  }
+
+  .secondaryNavCTAs,
+  .highlightednavbutton {
+    display: block;
+    width: 100%;
+    margin-left: 0;
   }
 }
