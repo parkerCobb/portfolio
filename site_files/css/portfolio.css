@@ -451,7 +451,7 @@ label {
   --_colors---parker-dark-blue: #001731;
 }
 
-.w-layout-hflex {
+.flex-row {
   flex-direction: row;
   align-items: flex-start;
   display: flex;
@@ -1050,10 +1050,6 @@ button {
   display: flex;
 }
 
-#review-section.w--current {
-  padding-bottom: 4vh;
-}
-
 .review-boxes {
   background-color: var(--_colors---parker-snow);
   mix-blend-mode: normal;
@@ -1284,17 +1280,6 @@ strong {
   font-family: Albert Sans, sans-serif;
   font-size: 1.1em;
   border: none;
-}
-
-.footerglobalButtons.w--current {
-  width: auto;
-  color: var(--_colors---parker-snow);
-  background-color: #3898ec00;
-  margin-right: 1em;
-  padding-left: 2em;
-  padding-right: 2em;
-  font-family: Albert Sans, sans-serif;
-  font-size: 1.1em;
 }
 
 .footer-nav {
@@ -2367,12 +2352,7 @@ strong {
     padding-bottom: 1em;
     font-size: 1.3em;
   }
-
-  .footerglobalButtons.w--current {
-    margin-right: 0;
-    font-size: 1.3em;
-  }
-
+  
   .footer-nav {
     flex-flow: column;
     justify-content: flex-start;
