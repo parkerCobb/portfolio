@@ -1273,6 +1273,10 @@ strong {
   border: none;
 }
 
+.footerglobalButtons:hover{
+  text-decoration: underline;
+}
+
 .footer-nav {
   justify-content: center;
   align-items: flex-start;
@@ -1348,6 +1352,10 @@ strong {
   margin-left: 2em;
   text-align: center;
   display: block;
+}
+
+#backtoTop:hover{
+  background-color: transparent;
 }
 
 ._404text {
