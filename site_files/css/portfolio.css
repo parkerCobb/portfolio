@@ -1000,14 +1000,6 @@ button {
   height: 2em;
 }
 
-.pixelimage {
-  aspect-ratio: 1389 / 1484;
-  opacity: 1;
-  object-fit: cover;
-  border-radius: 20px;
-  position: absolute;
-}
-
 #review-section {
   flex-flow: column;
   justify-content: flex-start;
