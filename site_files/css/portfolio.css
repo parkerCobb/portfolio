@@ -13,7 +13,7 @@ body {
 
 a,
 button {
-  cursor: url("https://parkercobb.github.io/portfolio/site_files/assets/meta_images/pointer.svg"),
+  cursor: url("../assets/meta_images/pointer.svg"),
     auto;
 }
 
@@ -163,7 +163,7 @@ textarea {
 a {
   -webkit-user-drag: none;
   user-select: text;
-  cursor: url("https://parkercobb.github.io/portfolio/site_files/assets/meta_images/pointer.svg"),
+  cursor: url("../assets/meta_images/pointer.svg"),
     auto !important;
   text-decoration: none;
 }
@@ -222,7 +222,7 @@ img {
   display: inline-block;
   border: 0.1em solid var(--_colors---parker-snow);
   border-radius: 8px;
-  cursor: url("https://parkercobb.github.io/portfolio/site_files/assets/meta_images/pointer.svg"),
+  cursor: url("../assets/meta_images/pointer.svg"),
     auto;
 }
 
@@ -384,6 +384,15 @@ label {
   background-color: var(--_colors---parker-blue);
   border-radius: 8px;
   padding: 6px;
+}
+
+
+.portfolio-hero-section{
+  max-width: 960px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5vh 0px 0px;
 }
 
 @keyframes spin {
@@ -578,21 +587,21 @@ h4 {
 }
 
 .port-hero-text-container {
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  flex-flow: column;
+  column-gap: 0px;
+  row-gap: 0px;
   justify-content: space-between;
   align-items: flex-start;
   min-width: auto;
   max-width: none;
   height: auto;
   max-height: 70vh;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   margin-left: 2em;
-  margin-right: 0;
-  padding-top: 0;
+  margin-right: 0px;
+  padding-top: 0px;
   display: flex;
   position: relative;
+  flex-flow: column;
 }
 
 .org-name {
@@ -1029,7 +1038,7 @@ button {
   position: relative;
   box-shadow: inset 3px 3px 4px 3px #0003,
     4px 4px 0 3px var(--_colors---parker-blue);
-  cursor: url("https://parkercobb.github.io/portfolio/site_files/assets/meta_images/cursor-light.svg"),
+  cursor: url("../assets/meta_images/cursor-light.svg"),
     auto;
 }
 
@@ -1272,27 +1281,26 @@ strong {
 }
 
 .case-study-hero-container {
-  aspect-ratio: auto;
-  border-radius: 8px;
-  flex-flow: row;
   width: 100%;
   max-width: 960px;
   height: auto;
   margin-bottom: 3em;
   display: flex;
   position: relative;
+  border-radius: 8px;
+  flex-flow: row;
   overflow: hidden;
 }
 
-.hero-image {
-  border: 4px solid var(--_colors---parker-blue);
+.work-hero-image {
   object-fit: cover;
-  border-radius: 10px;
   width: 50%;
   max-width: 50%;
   height: auto;
   max-height: none;
   position: relative;
+  border: 4px solid var(--_colors---parker-blue);
+  border-radius: 10px;
 }
 
 .div-block-9 {
@@ -1364,7 +1372,6 @@ strong {
   .nav-button {
     display: block;
   }
-  
 
   .nav-menu {
     display: none;
@@ -1444,23 +1451,22 @@ strong {
     margin-bottom: 0.5em;
   }
 
+  .portfolio-hero-section {
+    max-width: none;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding-top: 4em;
+  }
+
   .port-hero-text-container {
-    flex-flow: column;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
     max-height: none;
     margin-top: 2em;
-    margin-bottom: 0;
-    margin-left: 0;
-  }
-
-  .portfolio-hero-section{
-    max-width: 960px;
-    margin-top: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5vh 0px 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    flex-flow: column;
   }
 
   .org-name {
@@ -1707,21 +1713,14 @@ strong {
   }
 
   .case-study-hero-container {
+    max-width: none;
     flex-flow: column;
     overflow: hidden;
   }
 
-  .hero-image {
+  .work-hero-image {
     width: 100%;
     max-width: none;
-    width: auto;
-    min-width: 1em;
-    height: 2em;
-    min-height: 1em;
-    max-height: 100%;
-    line-height: 1.3em;
-    display: block;
-    overflow: visible;
   }
 
   .div-block-10 {
@@ -1810,14 +1809,14 @@ strong {
   }
 
   .port-hero-text-container {
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    flex-flow: column;
+    column-gap: 0px;
+    row-gap: 0px;
     justify-content: flex-start;
     align-items: flex-start;
     max-height: none;
     margin-top: 2em;
-    margin-left: 0;
+    margin-left: 0px;
+    flex-flow: column;
   }
 
   .org-wrapper {
@@ -1986,7 +1985,7 @@ strong {
     align-items: center;
   }
 
-  .hero-image {
+  .work-hero-image {
     width: 100%;
     max-width: 100%;
   }
@@ -2081,13 +2080,21 @@ strong {
     font-size: 2.3em;
   }
 
+  .portfolio-hero-section {
+    margin-left: 3em;
+    margin-right: 3em;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .port-hero-text-container {
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    flex-flow: column;
+    column-gap: 0px;
+    row-gap: 0px;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 0;
+    margin-left: 0px;
+    flex-flow: column;
   }
 
   .org-name {
@@ -2351,7 +2358,7 @@ strong {
     margin-bottom: 2em;
   }
 
-  .hero-image {
+  .work-hero-image {
     position: static;
   }
 
