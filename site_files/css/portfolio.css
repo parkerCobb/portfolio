@@ -769,10 +769,12 @@ h4 {
 .heroimage {
   z-index: 12;
   max-height: 72vh;
-  margin-top: -1em;
+  margin-top: -3em;
   padding-top: 0;
   position: static;
   bottom: 0;
+  width: 400px;
+  height: 400px;
 }
 
 .button-secondary {
@@ -1146,6 +1148,7 @@ button {
 .portfolio-image-container {
   border: 4px solid var(--_colors---parker-blue);
   background-color: var(--_colors---parker-blue);
+  cursor: url(../assets/meta_images/cursor-light.svg), auto;
   background-image: linear-gradient(
     180deg,
     var(--_colors---parker-blue),
@@ -1543,7 +1546,7 @@ strong {
     border-radius: 8px;
     flex: 0 auto;
     order: 0;
-    max-height: 40vh;
+    object-fit: cover;
     position: static;
   }
 
@@ -1920,8 +1923,8 @@ strong {
   }
 
   #review-section {
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: 3em;
+    margin-right: 3em;
   }
 
   .review-boxes {
@@ -2266,13 +2269,6 @@ strong {
 
   .spacer.short {
     height: 1em;
-  }
-
-  #reviews-section {
-    margin-top: 3em;
-    margin-left: 3em;
-    margin-right: 3em;
-    padding: 0;
   }
 
   .review-boxes {
