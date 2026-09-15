@@ -1091,6 +1091,7 @@ button {
 
 .contact-image {
   width: 100%;
+  height: auto;
   padding-top: 2em;
 }
 
