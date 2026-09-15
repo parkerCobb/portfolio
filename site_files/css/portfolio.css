@@ -1080,7 +1080,7 @@ button {
 }
 
 .contact-image-container {
-  width: 40%;
+  width: 40vw;
   display: flex;
   justify-content: center;
 }
@@ -1091,7 +1091,7 @@ button {
 
 .contact-image {
   width: 100%;
-  height: auto;
+  height: 100%;
   padding-top: 2em;
 }
 
